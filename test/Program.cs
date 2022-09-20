@@ -32,3 +32,20 @@ void ShowArray(string[] TextArray)
 
 string[] mesage = CreateArray(num);
 ShowArray(mesage);
+
+
+string[] CheckElements(string[] text)
+{
+    string[] result = new string[text.Length];
+    int count = 0;
+    for (int i = 0; i < text.Length; i++)
+    {
+        if (text[i].Length <= 3)
+        {
+            result[count] = text[i];
+            count++;
+        }
+    }
+
+    return result;
+}
