@@ -30,8 +30,7 @@ void ShowArray(string[] TextArray)
     Console.WriteLine();
 }
 
-string[] mesage = CreateArray(num);
-ShowArray(mesage);
+
 
 
 string[] CheckElements(string[] text)
@@ -49,3 +48,13 @@ string[] CheckElements(string[] text)
 
     return result;
 }
+
+
+
+
+string[] mesage = CreateArray(num);
+ShowArray(mesage);
+Console.WriteLine();
+Console.WriteLine("Массив из строк, длина которых меньше либо равна 3 символа. ");
+string[] mesage1 = CheckElements(mesage);
+ShowArray(mesage1);
